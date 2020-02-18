@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button segundapagina;
+    Button BTNRUTAS;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent segundapaginas= new Intent(MainActivity.this,VistaRutasActivas.class);
                 startActivity(segundapaginas);
+            }
+        });
+        BTNRUTAS= (Button)findViewById(R.id.id_ruta);
+        BTNRUTAS.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent paginarutas = new Intent(MainActivity.this,VistaLineaRutas.class);
+                startActivity(paginarutas);
             }
         });
     }

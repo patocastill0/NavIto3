@@ -11,7 +11,7 @@
         android:id="@+id/id_RutaActiva"
         style="@android:style/Widget.Material.Button"
         android:layout_width="150sp"
-        android:layout_height="52dp"
+        android:layout_height="40dp"
         android:background="#FF6D00"
         android:text="RUTAS ACTIVAS"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
@@ -20,12 +20,12 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.461" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <Button
         android:id="@+id/id_ruta"
         android:layout_width="154sp"
-        android:layout_height="52dp"
+        android:layout_height="40dp"
         android:background="#FF6D00"
         android:text="RUTAS"
         android:textColor="#F8F4F4"
@@ -34,12 +34,12 @@
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
+        app:layout_constraintVertical_bias="0.593" />
 
     <Button
         android:id="@+id/id_accidente"
-        android:layout_width="154sp"
-        android:layout_height="52sp"
+        android:layout_width="153dp"
+        android:layout_height="40dp"
         android:background="#ED0BB658"
         android:text="REPORTAR ACCIDENTE"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -51,8 +51,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="191dp"
-        android:layout_height="131dp"
+        android:layout_width="180dp"
+        android:layout_height="111dp"
         android:layout_marginTop="84dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -96,24 +96,51 @@
         android:layout_height="124dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.664"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.953"
+        app:layout_constraintVertical_bias="0.958"
         app:srcCompat="@drawable/qr" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="104dp"
         android:layout_height="68dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginLeft="68dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
         android:text="Escanear Unidad"
         android:textColor="#EB12C55C"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintVertical_bias="0.929" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="BUSCA MI RUTA:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFD600"
+        android:text="AutoCompleteTextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.332" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
